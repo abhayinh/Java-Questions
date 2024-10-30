@@ -8,26 +8,53 @@ import javax.sound.midi.SysexMessage;
 public class one {
     public static void main (String[]args){
 
+// Write a Java program to count letters,
+// ###############################################################
+  
+ Scanner scanner = new Scanner(System.in);
+
+ System.out.println("Enter The String ");
+
+ String sen= scanner.nextLine();
+
+ int countstring=0;
+
+
+ for (int i=0;i<sen.length();i++){
+    char getchar = sen.charAt(i);
+    if (Character.isLetter(getchar)) {
+
+        countstring++;
+
+        
+    }
+
+ }
+
+ System.out.println("Count of string is "+ countstring);
+
+
+
 // ###############################################################################
 // Write a Java program to reverse a string.
 
 
-Scanner input = new Scanner(System.in);
+// Scanner input = new Scanner(System.in);
 
-System.out.println("Enter the Sentance ");
+// System.out.println("Enter the Sentance ");
 
-String sentance=input.nextLine();
+// String sentance=input.nextLine();
 
-String reversed = "";
+// String reversed = "";
 
-for(int  i=sentance.length()-1; i>=0;  i--){
+// for(int  i=sentance.length()-1; i>=0;  i--){
 
-    reversed= reversed+sentance.charAt(i);
+//     reversed= reversed+sentance.charAt(i);
 
 
-}
+// }
 
-System.out.println("Reversed String is "+reversed);
+// System.out.println("Reversed String is "+reversed);
 
 
 
